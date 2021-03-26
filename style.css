@@ -1,0 +1,219 @@
+/* Authors: David Son, Kai Qi Chee, Maor Mashiach, Zane Thummborst */
+
+.header {
+  text-align:center;
+  font-size: 70px;
+  background-color: rgb(168, 11, 11);
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  text-shadow: 2px 2px black;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.background{
+  width: 100%;
+  height: auto;
+}
+
+.sub{
+  font-style:italic;
+  font-family: sans-serif;
+  font-size: 24px;
+  text-align: right;
+  text-shadow: 2px 2px black;
+  color: white;
+
+}
+span {
+  background-color: rgb(168, 11, 11);
+  border-radius: 5px;
+  padding: 5px;
+}
+.photo {
+  width:50% ;
+  height:auto;
+  margin-right: 5px;
+  max-height: 400px;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-weight:bold;
+  font-size:54px;
+  text-shadow: 2px 2px black;
+  text-decoration: none;
+}
+
+li {
+  display: inline ;
+  padding: 0px 10px 0px 10px;
+  border-collapse: collapse;
+  font-size: 36px;
+  font-weight:bold;
+}
+
+nav{
+text-align: center;
+}
+
+a:link {
+    color: rgb(161, 14, 14);
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+a:visited{
+    color: rgb(161, 14, 14);
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+a:hover {
+    color: rgb(255, 67, 67);
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+a:active {
+  color: rgb(255, 67, 67);
+      text-decoration: none;
+      font-family: sans-serif;
+}
+
+.des::first-letter {
+  font-weight: bold;
+}
+
+.des {
+  font-family: sans-serif;
+  font-size: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.activities {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.activity{
+  flex-grow: 1;
+}
+
+h1 {
+    color: rgb(161, 14, 14);
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+
+h3 {
+  color: orange;
+}
+
+.address {
+  font-size: 24px;
+  font-family: sans-serif;
+}
+.post {
+  display:flex;
+  flex-direction:row;
+}
+
+hr {
+  border: 3px solid rgb(161, 14, 14);
+}
+
+.rating {
+  width: 30%;
+  height: 30%;
+}
+
+@media only screen and (min-width: 999px)
+{
+  .activities{
+    flex-direction: column;
+    align-items: left;
+  }
+  .photo{
+    min-width: 200px;
+  }
+}
+
+@media only screen and (max-width: 998px) and (min-width:400px)
+{
+  .activites{
+    flex-direction: row;
+  }
+  .post{
+    flex-direction: column;
+  }
+  .photo{
+    margin-left:auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  li{
+    font-size: 20px;
+  }
+  h1{
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+  }
+  .header{
+    font-size: 44px;
+  }
+  .address{
+    text-align: center;
+  }
+}
+@media only screen and (max-width:399px)
+{
+    .activites{
+    flex-direction: row;
+  }
+  .post{
+    flex-direction: column;
+  }
+  .photo{
+    min-width: 125px;
+    width: 50%;
+  }
+  li{
+    font-size: 10px;
+  }
+  h1{
+    text-align: left;
+    font-size: 20px;
+  }
+  h3{
+    text-align: left;
+  }
+  .header{
+    font-size: 30px;
+  }
+  .address{
+    text-align: left;
+    font-size: 16px;
+  }
+  .des{
+    font-size: 14px;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .sub{
+    font-size:20px;
+  }
+  .title{
+    font-size: 30px;
+  }
+}
